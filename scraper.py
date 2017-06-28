@@ -1,3 +1,4 @@
+#source code from https://classic.scraperwiki.com/scrapers/google_news_scrape/
 import urllib2
 from xml.dom.minidom import parseString
 
@@ -20,3 +21,4 @@ def get_google_new_results( term, count ):
 items = get_google_new_results( 'PostNL', 10 )
 for i,e in enumerate(items):
     print '%d: %s' % (i+1,e,)
+    
